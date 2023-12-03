@@ -1,12 +1,11 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+$font-family-sans-serif: "Segoe UI", "Roboto",
+  "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$theme-colors: (
- "primary": #fabada
-);
+$primary: #1C941A;
+$bs-dropdown-header-color: #1C941A;
 
 $mqMinWidth: 420px;

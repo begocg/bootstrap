@@ -1,0 +1,20 @@
+{
+  "extends": "@parcel/config-default",
+  "transforms": {
+    "*.css": [
+      "@parcel/transformer-postcss",
+      {
+        "plugins": [
+          [
+            "postcss-replace",
+            {
+              "pattern": "url('node_modules/@flaticon/flaticon-uicons/css/all/all",
+              "replace": "url('all/"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
+

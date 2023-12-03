@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 5% 15%;
+
+  div:has(> p) {
+    padding: 10%
+  }
+
+  @media (width <=1280) {
+    margin: 5%;
+  }
+
+  .card {
+    width: calc(33.33% - 20px);
+
+    @media (width <=1280) {
+      width: calc(100%);
+    }
+  }
+}
+
+:is(h1, h2, h3) {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2%;
+}
+
+
+
+.carrusel {
+  display: flex;
+  justify-content: center;
+
+  &__carrusel--width {
+    width: 70%;
+
+    @media (width <=1280) {
+      width: 100%;
+    }
+  }
+}
+
+
+.carousel-caption {
+  background: rgb(128, 128, 128, 50%);
+}
+
+body {
+  margin: 0% 5%;
+  height: auto;
+}
+
+.tabla {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  align-items: center;
+}
+
+.img__img--center{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: 35%;
+    
+    @media (width <=1280) {
+      width: 100%;
+    }
+  }
+}
+
+.blockquote {
+  padding: 60px 80px 40px;
+  position: relative;
+
+  @media (width <=1280) {
+    padding: 1%;
+    }
+
+  &__p{
+    font-weight: 700px;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+dl {
+  display: flex;
+  flex-flow: row wrap;
+
+  @media (width >=1280) {
+    border-width: 1px 1px 0 0;
+    border: solid $primary;
+    width: 70%;
+    }
+}
+
+dt {
+  font-weight: bold;
+  text-decoration: underline;
+  
+  @media (width >=1280) {
+  font-weight: normal;
+  text-decoration: none;
+  flex-basis: 20%;
+  padding: 2px 4px;
+  background: $primary;
+  text-align: right;
+  color: #fff;
+  }
+  
+}
+
+dd {
+  margin: 0;
+  padding: 0 0 0.5em;
+
+  @media (width >=1280) {
+  flex-basis: 70%;
+  flex-grow: 1;
+  margin: 0;
+  padding: 2px 4px;
+  border-bottom: 1px solid $primary;
+  }
+}
+
+
+

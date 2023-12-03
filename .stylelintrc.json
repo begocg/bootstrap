@@ -1,0 +1,22 @@
+{
+    "plugins": [
+      "stylelint-selector-bem-pattern"
+    ],
+      "extends": "stylelint-config-standard",
+      "rules": {
+        "color-function-notation": "legacy",
+        "at-rule-no-unknown": null,
+        "import-notation": null,
+        "selector-class-pattern": null,
+        "selector-id-pattern": null,
+        "plugin/selector-bem-pattern": {
+          "componentName": "[A-Z]+",
+          "componentSelectors": {
+            "initial": "^\\.{componentName}(?:-[a-z]+)?$",
+            "combined": "^\\.combined-{componentName}-[a-z]+$"
+          },
+          "utilitySelectors": "^\\.util-[a-z]+$"
+        }
+      }
+    }
+     
